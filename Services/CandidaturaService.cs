@@ -15,4 +15,11 @@ public class CandidaturaService
     {
         return lista;
     }
+    public void AtualizarStatus(int index, string novoStatus)
+{
+    if (index >= 0 && index < lista.Count)
+    {
+        lista[index].Status = novoStatus;
+    }
+}
 }
