@@ -1,0 +1,23 @@
+[
+  {
+    "Empresa": "leila",
+    "Cargo": "clientevip",
+    "DataAplicacao": "2026-03-25T10:28:25.6203912-03:00",
+    "Status": "Enviado",
+    "Observacoes": null
+  },
+  {
+    "Empresa": "cariocas",
+    "Cargo": "estagiaria",
+    "DataAplicacao": "2026-03-25T10:28:43.7395298-03:00",
+    "Status": "Enviado",
+    "Observacoes": null
+  },
+  {
+    "Empresa": "blackgate",
+    "Cargo": "cleaner",
+    "DataAplicacao": "2026-03-25T10:28:59.3471891-03:00",
+    "Status": "Enviado",
+    "Observacoes": null
+  }
+]
