@@ -22,4 +22,11 @@ public class CandidaturaService
         lista[index].Status = novoStatus;
     }
 }
+public void Remover(int index)
+{
+    if (index >= 0 && index < lista.Count)
+    {
+        lista.RemoveAt(index);
+    }
+}
 }

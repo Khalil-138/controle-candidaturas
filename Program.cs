@@ -8,6 +8,7 @@ while (true)
     Console.WriteLine("\n1 - Adicionar");
     Console.WriteLine("2 - Listar");
     Console.WriteLine("3 - Atualizar status");
+    Console.WriteLine("4 - Remover candidatura");
     Console.WriteLine("0 - Sair");
 
     var op = Console.ReadLine();
@@ -75,6 +76,33 @@ while (true)
 
         Console.WriteLine("Status atualizado!");
     }
+    else if (op == "4")
+{
+    var lista = service.Listar();
+
+    if (lista.Count == 0)
+    {
+        Console.WriteLine("Nenhuma candidatura cadastrada.");
+        continue;
+    }
+
+    for (int i = 0; i < lista.Count; i++)
+    {
+        Console.WriteLine($"{i} - {lista[i].Empresa} - {lista[i].Cargo} - {lista[i].Status}");
+    }
+
+    Console.Write("Escolha o índice para remover: ");
+
+    if (!int.TryParse(Console.ReadLine(), out int index))
+    {
+        Console.WriteLine("Índice inválido.");
+        continue;
+    }
+
+    service.Remover(index);
+
+    Console.WriteLine("Candidatura removida!");
+}
     else if (op == "0")
     {
         break;
